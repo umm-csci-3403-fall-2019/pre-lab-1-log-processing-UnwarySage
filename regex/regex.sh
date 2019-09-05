@@ -8,3 +8,6 @@ echo $FILTERED_FILE
 
 #https://stackoverflow.com/questions/1665549/have-sed-ignore-non-matching-lines
 sed -E 's/\* I am ([a-zA-Z]+). My favorite sandwich is ([a-zA-Z]+)./1. \1\n2 \2\n/;t;d' < r1_input.txt > r1_output.txt
+
+
+sed -E 's/\* sandwich with ([a-zA-Z\.]+) ([a-zA-Z]+ [a-zA-Z]+)/1. \1\n1. \2\n/' < r2_input.txt > r2_output.txt
